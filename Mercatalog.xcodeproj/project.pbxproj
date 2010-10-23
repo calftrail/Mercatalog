@@ -1,0 +1,1087 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251005580ED4D00400C84ABF /* TLUnprojectionTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 251005570ED4D00400C84ABF /* TLUnprojectionTable.m */; };
+		2535A0230ED5DED400E677F4 /* TLNaturalEarthLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2535A0220ED5DED400E677F4 /* TLNaturalEarthLayer.m */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		D809ADAE0F1E7EB600D7B5C3 /* TLMainThreadPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D809ADAD0F1E7EB600D7B5C3 /* TLMainThreadPerformer.m */; };
+		D809AE2D0F1EB54700D7B5C3 /* Application.icns in Resources */ = {isa = PBXBuildFile; fileRef = D809AE2B0F1EB54700D7B5C3 /* Application.icns */; };
+		D809AE2E0F1EB54700D7B5C3 /* Library.icns in Resources */ = {isa = PBXBuildFile; fileRef = D809AE2C0F1EB54700D7B5C3 /* Library.icns */; };
+		D81CE1200E4258C8009BDEB0 /* TLProjection.c in Sources */ = {isa = PBXBuildFile; fileRef = D81CE11F0E4258C8009BDEB0 /* TLProjection.c */; };
+		D81CE1260E425C38009BDEB0 /* TLProjectionGeoid.c in Sources */ = {isa = PBXBuildFile; fileRef = D81CE1250E425C38009BDEB0 /* TLProjectionGeoid.c */; };
+		D81CE12B0E425D9B009BDEB0 /* TLProjectionParameters.c in Sources */ = {isa = PBXBuildFile; fileRef = D81CE12A0E425D9B009BDEB0 /* TLProjectionParameters.c */; };
+		D81D76890D78CADA0047B08F /* TLGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = D81D76880D78CADA0047B08F /* TLGeometry.c */; };
+		D823AE170ECC0D470050E92C /* TLMapLocationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D823AE160ECC0D470050E92C /* TLMapLocationLayer.m */; };
+		D82525630E759B7700B42730 /* TLMercatalogProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82525620E759B7700B42730 /* TLMercatalogProjectController.m */; };
+		D82526660E75CC7000B42730 /* TLTrackingZone.m in Sources */ = {isa = PBXBuildFile; fileRef = D82526650E75CC7000B42730 /* TLTrackingZone.m */; };
+		D82770420DE1A94000CB3CB7 /* TLArray.c in Sources */ = {isa = PBXBuildFile; fileRef = D82770410DE1A94000CB3CB7 /* TLArray.c */; };
+		D827707A0DE1DBD700CB3CB7 /* TLPolygon.c in Sources */ = {isa = PBXBuildFile; fileRef = D82770790DE1DBD700CB3CB7 /* TLPolygon.c */; };
+		D827712C0DE1EACA00CB3CB7 /* TLCoordPolygon.c in Sources */ = {isa = PBXBuildFile; fileRef = D827712B0DE1EACA00CB3CB7 /* TLCoordPolygon.c */; };
+		D82B380B0EEF4C64002C37C8 /* Mercatalog.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = D82B380A0EEF4C64002C37C8 /* Mercatalog.xcdatamodel */; };
+		D8375A370E119CBC00CF8A64 /* TLTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D8375A360E119CBC00CF8A64 /* TLTrack.m */; };
+		D83A6ED00E7356E300141509 /* TLInteractiveMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D83A6E990E73413700141509 /* TLInteractiveMapLayer.m */; };
+		D840F1ED0E9E985400E42614 /* TLCameraTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = D840F1EC0E9E985400E42614 /* TLCameraTimeline.m */; };
+		D840F2190E9EB89900E42614 /* TLLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = D840F2180E9EB89900E42614 /* TLLocator.m */; };
+		D840F2750E9EE9EF00E42614 /* TLTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = D840F2740E9EE9EF00E42614 /* TLTimelineView.m */; };
+		D84A38E60ECA16BF003B70EA /* TLWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D84A38E50ECA16BF003B70EA /* TLWaypoint.m */; };
+		D851A1890E495B2300F8A04B /* TLMapFrameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D851A1880E495B2300F8A04B /* TLMapFrameLayer.m */; };
+		D86D87E90D641003000CCDA6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86D87E80D641003000CCDA6 /* QuartzCore.framework */; };
+		D87021A20EF38432008E7404 /* TLModelTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D87021A10EF38432008E7404 /* TLModelTrack.m */; };
+		D87022290EF39140008E7404 /* TLModelPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D87022280EF39140008E7404 /* TLModelPhoto.m */; };
+		D870ACF20EDBA59A00691FB4 /* TLTileset.m in Sources */ = {isa = PBXBuildFile; fileRef = D870ACF10EDBA59A00691FB4 /* TLTileset.m */; };
+		D87C8E0C0EA55E5D000D493B /* TLSelectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D87C8E0B0EA55E5D000D493B /* TLSelectionManager.m */; };
+		D87C8EB20EA596A9000D493B /* TLTimelineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D87C8EB10EA596A9000D493B /* TLTimelineLayer.m */; };
+		D87C8EB50EA596CD000D493B /* TLTimelineInteractiveLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D87C8EB40EA596CD000D493B /* TLTimelineInteractiveLayer.m */; };
+		D87C8EBE0EA597B5000D493B /* TLTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D87C8EBD0EA597B5000D493B /* TLTime.m */; };
+		D87C8EC40EA5989E000D493B /* TLPhotoTimelineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D87C8EC30EA5989E000D493B /* TLPhotoTimelineLayer.m */; };
+		D87C8EE40EA59C6E000D493B /* TLTrackTimelineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D87C8EE30EA59C6E000D493B /* TLTrackTimelineLayer.m */; };
+		D87CBCF80D73BD99000D3521 /* TLGraticuleMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D87CBCF70D73BD99000D3521 /* TLGraticuleMapLayer.m */; };
+		D881C6F60DB4122E006BB50C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D881C6F50DB4122E006BB50C /* OpenGL.framework */; };
+		D884B04F0EE9EFAA00E00120 /* TLTimelineTimeZoneLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D884B04E0EE9EFAA00E00120 /* TLTimelineTimeZoneLayer.m */; };
+		D8867C820E6DB071006CE570 /* TLPhotoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8867C810E6DB071006CE570 /* TLPhotoLayer.m */; };
+		D88796640E1ADE280019582B /* TLExtent.c in Sources */ = {isa = PBXBuildFile; fileRef = D88796630E1ADE280019582B /* TLExtent.c */; };
+		D88796F30E1AF8660019582B /* TLProjectionGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = D88796F20E1AF8660019582B /* TLProjectionGeometry.m */; };
+		D88797D20E1B07250019582B /* TLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D877A5650E1AD04600F8F01D /* TLLocation.m */; };
+		D88D63B10ECCFD41007E2CD4 /* TLTimelineTrackerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D88D63B00ECCFD41007E2CD4 /* TLTimelineTrackerLayer.m */; };
+		D88D7AF10DB8484800858121 /* TLCoordGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = D88D7AF00DB8484800858121 /* TLCoordGeometry.c */; };
+		D890FD480EE71A2E0076166D /* TLCalendarTimelineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D890FD470EE71A2E0076166D /* TLCalendarTimelineLayer.m */; };
+		D890FD7B0EE732470076166D /* TLOffsetTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = D890FD6F0EE7313F0076166D /* TLOffsetTimestamp.m */; };
+		D890FDFA0EE7504C0076166D /* TLCameraTimelineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D890FDF90EE7504C0076166D /* TLCameraTimelineLayer.m */; };
+		D890FE690EE7699F0076166D /* TLTimelineNavigationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D890FE680EE7699F0076166D /* TLTimelineNavigationLayer.m */; };
+		D8922A200D735A200014A325 /* TLMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8922A1F0D735A200014A325 /* TLMapView.m */; };
+		D8922A280D735DDD0014A325 /* TLMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8922A270D735DDD0014A325 /* TLMapLayer.m */; };
+		D8955F490EB0EC2700F5EAD0 /* TLMercatalogStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955ECA0EB0D85100F5EAD0 /* TLMercatalogStyler.m */; };
+		D89A0FCF0F02E6F3000E48C9 /* TLPhotoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D89A0FCE0F02E6F3000E48C9 /* TLPhotoLayout.m */; };
+		D89FD7A60F267A3100D49A3C /* TLJimBos.m in Sources */ = {isa = PBXBuildFile; fileRef = D89FD7A50F267A3100D49A3C /* TLJimBos.m */; };
+		D8A088E10D5A927900446533 /* CTProjection.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A088E00D5A927900446533 /* CTProjection.m */; };
+		D8A0890B0D5A94DC00446533 /* liblibproj4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CD897E0D57C9F40039F3F8 /* liblibproj4.a */; };
+		D8A3CF850E0A01760036C32D /* TLMultiPolygon.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A3CF830E0A01760036C32D /* TLMultiPolygon.c */; };
+		D8A3CF880E0A01820036C32D /* TLSegment.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A3CF870E0A01820036C32D /* TLSegment.c */; };
+		D8A3D01C0E0C51100036C32D /* TLToolbag.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A3D01B0E0C51100036C32D /* TLToolbag.c */; };
+		D8A4D5AE0EAEC30300C76EB5 /* TLRandom.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D5AD0EAEC30300C76EB5 /* TLRandom.c */; };
+		D8A4D6AA0EAEE5E800C76EB5 /* TLGeoidGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D6A90EAEE5E800C76EB5 /* TLGeoidGeometry.c */; };
+		D8A6CF220E91661300BB9A65 /* TLTrackLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6CF210E91661300BB9A65 /* TLTrackLayer.m */; };
+		D8ABE7BB0F2669F700D5EF6A /* Registration.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8ABE7BA0F2669F700D5EF6A /* Registration.xib */; };
+		D8ABE7C90F2675B100D5EF6A /* ThankYou.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8ABE7C80F2675B100D5EF6A /* ThankYou.xib */; };
+		D8AEF8950EF9CA4500F7AD63 /* TLExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEF8940EF9CA4500F7AD63 /* TLExportController.m */; };
+		D8AEF8C30EF9D5DD00F7AD63 /* TLMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEF8C20EF9D5DD00F7AD63 /* TLMapController.m */; };
+		D8AEF8C60EF9D64400F7AD63 /* TLTimelineController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEF8C50EF9D64400F7AD63 /* TLTimelineController.m */; };
+		D8AEF95B0EF9EDD200F7AD63 /* TLMercatalogControllerShared.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEF95A0EF9EDD200F7AD63 /* TLMercatalogControllerShared.m */; };
+		D8B394620EF87A2400096ABB /* TLImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B394610EF87A2400096ABB /* TLImportController.m */; };
+		D8B861B00F169C0C00CA89C0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B861AF0F169C0C00CA89C0 /* Sparkle.framework */; };
+		D8B861C70F169C3800CA89C0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8B861AF0F169C0C00CA89C0 /* Sparkle.framework */; };
+		D8B862540F16B87500CA89C0 /* Acknowledgments.html in Resources */ = {isa = PBXBuildFile; fileRef = D8B862530F16B87500CA89C0 /* Acknowledgments.html */; };
+		D8B863830F16C84C00CA89C0 /* TLCrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B863820F16C84C00CA89C0 /* TLCrashReporter.framework */; };
+		D8B863880F16C85F00CA89C0 /* TLCrashReporter.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8B863820F16C84C00CA89C0 /* TLCrashReporter.framework */; };
+		D8B8664A0F17103000CA89C0 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = D8B866490F17103000CA89C0 /* dsa_pub.pem */; };
+		D8BE5CE90E647D0A00538F79 /* TLPointerArray.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BE5CE80E647D0A00538F79 /* TLPointerArray.c */; };
+		D8BFCC970E390E6D00192AA3 /* TLCocoaToolbag.m in Sources */ = {isa = PBXBuildFile; fileRef = D847C09B0E368D610074E51D /* TLCocoaToolbag.m */; };
+		D8C7910C0EB683770003546F /* TLMapNavigationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C7910B0EB683770003546F /* TLMapNavigationLayer.m */; };
+		D8C7F05F0EDDE567009A487A /* TLProjectedDrawing.c in Sources */ = {isa = PBXBuildFile; fileRef = D8C7F05E0EDDE567009A487A /* TLProjectedDrawing.c */; };
+		D8CC91530EDD22FA0038C80A /* Tiles in Resources */ = {isa = PBXBuildFile; fileRef = D8CC90F40EDD22FA0038C80A /* Tiles */; };
+		D8CEC9880EF493D300130E05 /* TLModelHost.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CEC9870EF493D300130E05 /* TLModelHost.m */; };
+		D8CEC98D0EF4940F00130E05 /* TLLibraryHost.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CEC98C0EF4940F00130E05 /* TLLibraryHost.m */; };
+		D8D366EB0EBB85660065D5E0 /* ImportSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C259100EBA19D800EEA5CA /* ImportSheet.xib */; };
+		D8D5D9260E5231B2009CDA4E /* TLFloat.c in Sources */ = {isa = PBXBuildFile; fileRef = D8D5D9250E5231B2009CDA4E /* TLFloat.c */; };
+		D8D64B580E4D8FE200202937 /* TLMercatalogAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D64B570E4D8FE200202937 /* TLMercatalogAppDelegate.m */; };
+		D8D64B5C0E4D922500202937 /* ProjectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D64B5B0E4D922500202937 /* ProjectWindow.xib */; };
+		D8D64B7E0E4D950A00202937 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D64B7D0E4D950A00202937 /* MainMenu.xib */; };
+		D8D64B8E0E4D959900202937 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165DFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		D8D9C35D0EDCB5120095FE87 /* TLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 255B285A0ED90BBC0067A4A4 /* TLCache.m */; };
+		D8DB88650EA3F759002F0D69 /* TLTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DB88640EA3F759002F0D69 /* TLTimestamp.m */; };
+		D8DB88E70EA43286002F0D69 /* TLMercatalogLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DB88E60EA43286002F0D69 /* TLMercatalogLibrary.m */; };
+		D8DFCB6C0E4785B40053FA6E /* TLProjectionInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = D8DFCB6B0E4785B40053FA6E /* TLProjectionInfo.c */; };
+		D8EA123A0EACFC6E00E63BC6 /* TLTrackingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EA12390EACFC6E00E63BC6 /* TLTrackingManager.m */; };
+		D8EE570B0D8F7345000ABA3F /* TLGPXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE570A0D8F7345000ABA3F /* TLGPXFile.m */; };
+		D8EE571F0D8F762D000ABA3F /* TLGPXWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE571E0D8F762D000ABA3F /* TLGPXWaypoint.m */; };
+		D8EE57220D8F7648000ABA3F /* TLGPXTrackSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE57210D8F7648000ABA3F /* TLGPXTrackSegment.m */; };
+		D8EE57250D8F7662000ABA3F /* TLGPXTracklog.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE57240D8F7662000ABA3F /* TLGPXTracklog.m */; };
+		D8EE57390D8F7920000ABA3F /* TLGPXNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE57380D8F7920000ABA3F /* TLGPXNode.m */; };
+		D8F078220E49089C005AB83F /* TLMultiCoordPolygon.c in Sources */ = {isa = PBXBuildFile; fileRef = D887969D0E1AEFFF0019582B /* TLMultiCoordPolygon.c */; };
+		D8F0AF8B0E255B05002F14FA /* TLAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F0AF8A0E255B05002F14FA /* TLAlias.m */; };
+		D8F0AFC60E256FF5002F14FA /* TLProjectBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F0AFC50E256FF5002F14FA /* TLProjectBundle.m */; };
+		D8F9DF0B0EE0896300219737 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D8FB89F10DA6E03D006E3F50 /* TLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FB89F00DA6E03D006E3F50 /* TLPhoto.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8A089120D5A950200446533 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8CD89750D57C9F40039F3F8 /* libproj4.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = libproj4;
+		};
+		D8CD897D0D57C9F40039F3F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8CD89750D57C9F40039F3F8 /* libproj4.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = libproj4;
+		};
+		D8CD897F0D57C9F40039F3F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8CD89750D57C9F40039F3F8 /* libproj4.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8CD891A0D57BD590039F3F8;
+			remoteInfo = "lproj (CLI)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8B861C90F169C3900CA89C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D8B863880F16C85F00CA89C0 /* TLCrashReporter.framework in CopyFiles */,
+				D8B861C70F169C3800CA89C0 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		251005560ED4D00400C84ABF /* TLUnprojectionTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLUnprojectionTable.h; sourceTree = "<group>"; };
+		251005570ED4D00400C84ABF /* TLUnprojectionTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLUnprojectionTable.m; sourceTree = "<group>"; };
+		2535A0220ED5DED400E677F4 /* TLNaturalEarthLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNaturalEarthLayer.m; sourceTree = "<group>"; };
+		255B28590ED90BBC0067A4A4 /* TLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCache.h; sourceTree = "<group>"; };
+		255B285A0ED90BBC0067A4A4 /* TLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCache.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* mercatalog_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mercatalog_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Mercatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mercatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D809ADAC0F1E7EB600D7B5C3 /* TLMainThreadPerformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMainThreadPerformer.h; sourceTree = "<group>"; };
+		D809ADAD0F1E7EB600D7B5C3 /* TLMainThreadPerformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMainThreadPerformer.m; sourceTree = "<group>"; };
+		D809AE2B0F1EB54700D7B5C3 /* Application.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Application.icns; path = Resources/Application.icns; sourceTree = "<group>"; };
+		D809AE2C0F1EB54700D7B5C3 /* Library.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Library.icns; path = Resources/Library.icns; sourceTree = "<group>"; };
+		D81CE11E0E4258C8009BDEB0 /* TLProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjection.h; sourceTree = "<group>"; };
+		D81CE11F0E4258C8009BDEB0 /* TLProjection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLProjection.c; sourceTree = "<group>"; };
+		D81CE1240E425C38009BDEB0 /* TLProjectionGeoid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionGeoid.h; sourceTree = "<group>"; };
+		D81CE1250E425C38009BDEB0 /* TLProjectionGeoid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLProjectionGeoid.c; sourceTree = "<group>"; };
+		D81CE1290E425D9B009BDEB0 /* TLProjectionParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionParameters.h; sourceTree = "<group>"; };
+		D81CE12A0E425D9B009BDEB0 /* TLProjectionParameters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLProjectionParameters.c; sourceTree = "<group>"; };
+		D81D76870D78CADA0047B08F /* TLGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGeometry.h; sourceTree = "<group>"; };
+		D81D76880D78CADA0047B08F /* TLGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLGeometry.c; sourceTree = "<group>"; };
+		D823AE150ECC0D470050E92C /* TLMapLocationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapLocationLayer.h; sourceTree = "<group>"; };
+		D823AE160ECC0D470050E92C /* TLMapLocationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMapLocationLayer.m; sourceTree = "<group>"; };
+		D82525610E759B7700B42730 /* TLMercatalogProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMercatalogProjectController.h; sourceTree = "<group>"; };
+		D82525620E759B7700B42730 /* TLMercatalogProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMercatalogProjectController.m; sourceTree = "<group>"; };
+		D82526640E75CC7000B42730 /* TLTrackingZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTrackingZone.h; sourceTree = "<group>"; };
+		D82526650E75CC7000B42730 /* TLTrackingZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTrackingZone.m; sourceTree = "<group>"; };
+		D82770400DE1A94000CB3CB7 /* TLArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLArray.h; sourceTree = "<group>"; };
+		D82770410DE1A94000CB3CB7 /* TLArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLArray.c; sourceTree = "<group>"; };
+		D82770780DE1DBD700CB3CB7 /* TLPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPolygon.h; sourceTree = "<group>"; };
+		D82770790DE1DBD700CB3CB7 /* TLPolygon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLPolygon.c; sourceTree = "<group>"; };
+		D827707D0DE1DC4C00CB3CB7 /* TLPrimitiveTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPrimitiveTypes.h; sourceTree = "<group>"; };
+		D827712A0DE1EACA00CB3CB7 /* TLCoordPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCoordPolygon.h; sourceTree = "<group>"; };
+		D827712B0DE1EACA00CB3CB7 /* TLCoordPolygon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLCoordPolygon.c; sourceTree = "<group>"; };
+		D82B380A0EEF4C64002C37C8 /* Mercatalog.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Mercatalog.xcdatamodel; sourceTree = "<group>"; };
+		D8375A350E119CBC00CF8A64 /* TLTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTrack.h; sourceTree = "<group>"; };
+		D8375A360E119CBC00CF8A64 /* TLTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTrack.m; sourceTree = "<group>"; };
+		D83A6E980E73413700141509 /* TLInteractiveMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLInteractiveMapLayer.h; sourceTree = "<group>"; };
+		D83A6E990E73413700141509 /* TLInteractiveMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLInteractiveMapLayer.m; sourceTree = "<group>"; };
+		D83A6E9F0E7348BB00141509 /* TLMapLayer+HostInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLMapLayer+HostInternals.h"; sourceTree = "<group>"; };
+		D83A6EF10E735E1D00141509 /* TLMapView+HostInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLMapView+HostInternals.h"; sourceTree = "<group>"; };
+		D840F1EB0E9E985400E42614 /* TLCameraTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCameraTimeline.h; sourceTree = "<group>"; };
+		D840F1EC0E9E985400E42614 /* TLCameraTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCameraTimeline.m; sourceTree = "<group>"; };
+		D840F2170E9EB89900E42614 /* TLLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocator.h; sourceTree = "<group>"; };
+		D840F2180E9EB89900E42614 /* TLLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLocator.m; sourceTree = "<group>"; };
+		D840F2730E9EE9EF00E42614 /* TLTimelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimelineView.h; sourceTree = "<group>"; };
+		D840F2740E9EE9EF00E42614 /* TLTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimelineView.m; sourceTree = "<group>"; };
+		D847C09A0E368D610074E51D /* TLCocoaToolbag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCocoaToolbag.h; sourceTree = "<group>"; };
+		D847C09B0E368D610074E51D /* TLCocoaToolbag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCocoaToolbag.m; sourceTree = "<group>"; };
+		D84A38E40ECA16BF003B70EA /* TLWaypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLWaypoint.h; sourceTree = "<group>"; };
+		D84A38E50ECA16BF003B70EA /* TLWaypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLWaypoint.m; sourceTree = "<group>"; };
+		D851A1870E495B2300F8A04B /* TLMapFrameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapFrameLayer.h; sourceTree = "<group>"; };
+		D851A1880E495B2300F8A04B /* TLMapFrameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMapFrameLayer.m; sourceTree = "<group>"; };
+		D861A15E0E429F77000AAE80 /* TLProjectionParametersInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionParametersInternal.h; sourceTree = "<group>"; };
+		D861A1990E42AF0E000AAE80 /* TLProjectionGeoidInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionGeoidInternals.h; sourceTree = "<group>"; };
+		D86D87E80D641003000CCDA6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		D87021A00EF38432008E7404 /* TLModelTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLModelTrack.h; sourceTree = "<group>"; };
+		D87021A10EF38432008E7404 /* TLModelTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLModelTrack.m; sourceTree = "<group>"; };
+		D87022270EF39140008E7404 /* TLModelPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLModelPhoto.h; sourceTree = "<group>"; };
+		D87022280EF39140008E7404 /* TLModelPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLModelPhoto.m; sourceTree = "<group>"; };
+		D870ACF00EDBA59A00691FB4 /* TLTileset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTileset.h; sourceTree = "<group>"; };
+		D870ACF10EDBA59A00691FB4 /* TLTileset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTileset.m; sourceTree = "<group>"; };
+		D877A5640E1AD04600F8F01D /* TLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocation.h; sourceTree = "<group>"; };
+		D877A5650E1AD04600F8F01D /* TLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLocation.m; sourceTree = "<group>"; };
+		D877A56B0E1AD26A00F8F01D /* TLCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCoordinate.h; sourceTree = "<group>"; };
+		D87C8E0A0EA55E5D000D493B /* TLSelectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSelectionManager.h; sourceTree = "<group>"; };
+		D87C8E0B0EA55E5D000D493B /* TLSelectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLSelectionManager.m; sourceTree = "<group>"; };
+		D87C8EB00EA596A9000D493B /* TLTimelineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimelineLayer.h; sourceTree = "<group>"; };
+		D87C8EB10EA596A9000D493B /* TLTimelineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimelineLayer.m; sourceTree = "<group>"; };
+		D87C8EB30EA596CD000D493B /* TLTimelineInteractiveLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimelineInteractiveLayer.h; sourceTree = "<group>"; };
+		D87C8EB40EA596CD000D493B /* TLTimelineInteractiveLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimelineInteractiveLayer.m; sourceTree = "<group>"; };
+		D87C8EB70EA59702000D493B /* TLTimelineInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimelineInfo.h; sourceTree = "<group>"; };
+		D87C8EBC0EA597B5000D493B /* TLTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTime.h; sourceTree = "<group>"; };
+		D87C8EBD0EA597B5000D493B /* TLTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTime.m; sourceTree = "<group>"; };
+		D87C8EC20EA5989E000D493B /* TLPhotoTimelineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhotoTimelineLayer.h; sourceTree = "<group>"; };
+		D87C8EC30EA5989E000D493B /* TLPhotoTimelineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhotoTimelineLayer.m; sourceTree = "<group>"; };
+		D87C8ED30EA59A98000D493B /* TLTimelineLayer+HostInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLTimelineLayer+HostInternals.h"; sourceTree = "<group>"; };
+		D87C8EE20EA59C6E000D493B /* TLTrackTimelineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTrackTimelineLayer.h; sourceTree = "<group>"; };
+		D87C8EE30EA59C6E000D493B /* TLTrackTimelineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTrackTimelineLayer.m; sourceTree = "<group>"; };
+		D87CBCF60D73BD99000D3521 /* TLGraticuleMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGraticuleMapLayer.h; sourceTree = "<group>"; };
+		D87CBCF70D73BD99000D3521 /* TLGraticuleMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGraticuleMapLayer.m; sourceTree = "<group>"; };
+		D881C6F50DB4122E006BB50C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		D884B04D0EE9EFAA00E00120 /* TLTimelineTimeZoneLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimelineTimeZoneLayer.h; sourceTree = "<group>"; };
+		D884B04E0EE9EFAA00E00120 /* TLTimelineTimeZoneLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimelineTimeZoneLayer.m; sourceTree = "<group>"; };
+		D884D2380E09D7F200C7F3F3 /* TLArrayTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLArrayTemplate.h; sourceTree = "<group>"; };
+		D8867C800E6DB071006CE570 /* TLPhotoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhotoLayer.h; sourceTree = "<group>"; };
+		D8867C810E6DB071006CE570 /* TLPhotoLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhotoLayer.m; sourceTree = "<group>"; };
+		D88796620E1ADE280019582B /* TLExtent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLExtent.h; sourceTree = "<group>"; };
+		D88796630E1ADE280019582B /* TLExtent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLExtent.c; sourceTree = "<group>"; };
+		D887969C0E1AEFFF0019582B /* TLMultiCoordPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMultiCoordPolygon.h; sourceTree = "<group>"; };
+		D887969D0E1AEFFF0019582B /* TLMultiCoordPolygon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLMultiCoordPolygon.c; sourceTree = "<group>"; };
+		D88796D40E1AF6390019582B /* TLBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBounds.h; sourceTree = "<group>"; };
+		D88796F10E1AF8660019582B /* TLProjectionGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionGeometry.h; sourceTree = "<group>"; };
+		D88796F20E1AF8660019582B /* TLProjectionGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLProjectionGeometry.m; sourceTree = "<group>"; };
+		D88D63AF0ECCFD41007E2CD4 /* TLTimelineTrackerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimelineTrackerLayer.h; sourceTree = "<group>"; };
+		D88D63B00ECCFD41007E2CD4 /* TLTimelineTrackerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimelineTrackerLayer.m; sourceTree = "<group>"; };
+		D88D7AEF0DB8484800858121 /* TLCoordGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCoordGeometry.h; sourceTree = "<group>"; };
+		D88D7AF00DB8484800858121 /* TLCoordGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLCoordGeometry.c; sourceTree = "<group>"; };
+		D890FD460EE71A2E0076166D /* TLCalendarTimelineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCalendarTimelineLayer.h; sourceTree = "<group>"; };
+		D890FD470EE71A2E0076166D /* TLCalendarTimelineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCalendarTimelineLayer.m; sourceTree = "<group>"; };
+		D890FD6E0EE7313F0076166D /* TLOffsetTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLOffsetTimestamp.h; sourceTree = "<group>"; };
+		D890FD6F0EE7313F0076166D /* TLOffsetTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLOffsetTimestamp.m; sourceTree = "<group>"; };
+		D890FDF80EE7504C0076166D /* TLCameraTimelineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCameraTimelineLayer.h; sourceTree = "<group>"; };
+		D890FDF90EE7504C0076166D /* TLCameraTimelineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCameraTimelineLayer.m; sourceTree = "<group>"; };
+		D890FE670EE7699F0076166D /* TLTimelineNavigationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimelineNavigationLayer.h; sourceTree = "<group>"; };
+		D890FE680EE7699F0076166D /* TLTimelineNavigationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimelineNavigationLayer.m; sourceTree = "<group>"; };
+		D8922A1E0D735A200014A325 /* TLMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapView.h; sourceTree = "<group>"; };
+		D8922A1F0D735A200014A325 /* TLMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMapView.m; sourceTree = "<group>"; };
+		D8922A260D735DDD0014A325 /* TLMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapLayer.h; sourceTree = "<group>"; };
+		D8922A270D735DDD0014A325 /* TLMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMapLayer.m; sourceTree = "<group>"; };
+		D8955EC90EB0D85100F5EAD0 /* TLMercatalogStyler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMercatalogStyler.h; sourceTree = "<group>"; };
+		D8955ECA0EB0D85100F5EAD0 /* TLMercatalogStyler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMercatalogStyler.m; sourceTree = "<group>"; };
+		D8955F190EB0E90300F5EAD0 /* TLMapInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapInfo.h; sourceTree = "<group>"; };
+		D89A0FCD0F02E6F3000E48C9 /* TLPhotoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhotoLayout.h; sourceTree = "<group>"; };
+		D89A0FCE0F02E6F3000E48C9 /* TLPhotoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhotoLayout.m; sourceTree = "<group>"; };
+		D89D762A0EDB3DF800260744 /* TLMercatalogViewShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMercatalogViewShared.h; sourceTree = "<group>"; };
+		D89FD7A40F267A3100D49A3C /* TLJimBos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLJimBos.h; sourceTree = "<group>"; };
+		D89FD7A50F267A3100D49A3C /* TLJimBos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLJimBos.m; sourceTree = "<group>"; };
+		D8A088DF0D5A927900446533 /* CTProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTProjection.h; sourceTree = "<group>"; };
+		D8A088E00D5A927900446533 /* CTProjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTProjection.m; sourceTree = "<group>"; };
+		D8A3CF830E0A01760036C32D /* TLMultiPolygon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLMultiPolygon.c; sourceTree = "<group>"; };
+		D8A3CF840E0A01760036C32D /* TLMultiPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMultiPolygon.h; sourceTree = "<group>"; };
+		D8A3CF860E0A01820036C32D /* TLSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSegment.h; sourceTree = "<group>"; };
+		D8A3CF870E0A01820036C32D /* TLSegment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLSegment.c; sourceTree = "<group>"; };
+		D8A3D01A0E0C51100036C32D /* TLToolbag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLToolbag.h; sourceTree = "<group>"; };
+		D8A3D01B0E0C51100036C32D /* TLToolbag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLToolbag.c; sourceTree = "<group>"; };
+		D8A4D5AC0EAEC30300C76EB5 /* TLRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLRandom.h; sourceTree = "<group>"; };
+		D8A4D5AD0EAEC30300C76EB5 /* TLRandom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLRandom.c; sourceTree = "<group>"; };
+		D8A4D6900EAEE27900C76EB5 /* TLPlanetPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPlanetPoint.h; sourceTree = "<group>"; };
+		D8A4D6A80EAEE5E800C76EB5 /* TLGeoidGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGeoidGeometry.h; sourceTree = "<group>"; };
+		D8A4D6A90EAEE5E800C76EB5 /* TLGeoidGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLGeoidGeometry.c; sourceTree = "<group>"; };
+		D8A6CF200E91661300BB9A65 /* TLTrackLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTrackLayer.h; sourceTree = "<group>"; };
+		D8A6CF210E91661300BB9A65 /* TLTrackLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTrackLayer.m; sourceTree = "<group>"; };
+		D8ABE7BA0F2669F700D5EF6A /* Registration.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Registration.xib; sourceTree = "<group>"; };
+		D8ABE7C80F2675B100D5EF6A /* ThankYou.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThankYou.xib; sourceTree = "<group>"; };
+		D8AEF8930EF9CA4500F7AD63 /* TLExportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLExportController.h; sourceTree = "<group>"; };
+		D8AEF8940EF9CA4500F7AD63 /* TLExportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLExportController.m; sourceTree = "<group>"; };
+		D8AEF8C10EF9D5DD00F7AD63 /* TLMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapController.h; sourceTree = "<group>"; };
+		D8AEF8C20EF9D5DD00F7AD63 /* TLMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMapController.m; sourceTree = "<group>"; };
+		D8AEF8C40EF9D64400F7AD63 /* TLTimelineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimelineController.h; sourceTree = "<group>"; };
+		D8AEF8C50EF9D64400F7AD63 /* TLTimelineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimelineController.m; sourceTree = "<group>"; };
+		D8AEF9090EF9DFB400F7AD63 /* TLMercatalogControllerShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMercatalogControllerShared.h; sourceTree = "<group>"; };
+		D8AEF95A0EF9EDD200F7AD63 /* TLMercatalogControllerShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMercatalogControllerShared.m; sourceTree = "<group>"; };
+		D8B394600EF87A2400096ABB /* TLImportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLImportController.h; sourceTree = "<group>"; };
+		D8B394610EF87A2400096ABB /* TLImportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLImportController.m; sourceTree = "<group>"; };
+		D8B861AF0F169C0C00CA89C0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Dependencies/Sparkle.framework; sourceTree = "<group>"; };
+		D8B862530F16B87500CA89C0 /* Acknowledgments.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Acknowledgments.html; path = Resources/Acknowledgments.html; sourceTree = "<group>"; };
+		D8B863820F16C84C00CA89C0 /* TLCrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLCrashReporter.framework; path = Dependencies/TLCrashReporter.framework; sourceTree = "<group>"; };
+		D8B866490F17103000CA89C0 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Resources/dsa_pub.pem; sourceTree = "<group>"; };
+		D8BE5CE70E647D0A00538F79 /* TLPointerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPointerArray.h; sourceTree = "<group>"; };
+		D8BE5CE80E647D0A00538F79 /* TLPointerArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLPointerArray.c; sourceTree = "<group>"; };
+		D8C259100EBA19D800EEA5CA /* ImportSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImportSheet.xib; sourceTree = "<group>"; };
+		D8C3CCF70EA64403005BFEBD /* TLTimelineView+HostInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLTimelineView+HostInternals.h"; sourceTree = "<group>"; };
+		D8C7910A0EB683770003546F /* TLMapNavigationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapNavigationLayer.h; sourceTree = "<group>"; };
+		D8C7910B0EB683770003546F /* TLMapNavigationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMapNavigationLayer.m; sourceTree = "<group>"; };
+		D8C7F05D0EDDE567009A487A /* TLProjectedDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectedDrawing.h; sourceTree = "<group>"; };
+		D8C7F05E0EDDE567009A487A /* TLProjectedDrawing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLProjectedDrawing.c; sourceTree = "<group>"; };
+		D8CC90F40EDD22FA0038C80A /* Tiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tiles; sourceTree = "<group>"; };
+		D8CD89750D57C9F40039F3F8 /* libproj4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libproj4.xcodeproj; path = Dependencies/libproj4.xcodeproj; sourceTree = "<group>"; };
+		D8CD89940D57CA340039F3F8 /* lib_proj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lib_proj.h; path = Dependencies/libproj4/lib_proj.h; sourceTree = "<group>"; };
+		D8CEC9860EF493D300130E05 /* TLModelHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLModelHost.h; sourceTree = "<group>"; };
+		D8CEC9870EF493D300130E05 /* TLModelHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLModelHost.m; sourceTree = "<group>"; };
+		D8CEC98B0EF4940F00130E05 /* TLLibraryHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLibraryHost.h; sourceTree = "<group>"; };
+		D8CEC98C0EF4940F00130E05 /* TLLibraryHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLibraryHost.m; sourceTree = "<group>"; };
+		D8D0B03C0E440780008C1BFC /* TLProjectionDataRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionDataRepresentation.h; sourceTree = "<group>"; };
+		D8D5D9240E5231B2009CDA4E /* TLFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLFloat.h; sourceTree = "<group>"; };
+		D8D5D9250E5231B2009CDA4E /* TLFloat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLFloat.c; sourceTree = "<group>"; };
+		D8D64B560E4D8FE200202937 /* TLMercatalogAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMercatalogAppDelegate.h; sourceTree = "<group>"; };
+		D8D64B570E4D8FE200202937 /* TLMercatalogAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMercatalogAppDelegate.m; sourceTree = "<group>"; };
+		D8D64B5B0E4D922500202937 /* ProjectWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectWindow.xib; sourceTree = "<group>"; };
+		D8D64B7D0E4D950A00202937 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		D8DB88630EA3F759002F0D69 /* TLTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimestamp.h; sourceTree = "<group>"; };
+		D8DB88640EA3F759002F0D69 /* TLTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimestamp.m; sourceTree = "<group>"; };
+		D8DB88E50EA43286002F0D69 /* TLMercatalogLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMercatalogLibrary.h; sourceTree = "<group>"; };
+		D8DB88E60EA43286002F0D69 /* TLMercatalogLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMercatalogLibrary.m; sourceTree = "<group>"; };
+		D8DFCB6A0E4785B40053FA6E /* TLProjectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionInfo.h; sourceTree = "<group>"; };
+		D8DFCB6B0E4785B40053FA6E /* TLProjectionInfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLProjectionInfo.c; sourceTree = "<group>"; };
+		D8E237D00E9E80180065EEEE /* TLNaturalEarthLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNaturalEarthLayer.h; sourceTree = "<group>"; };
+		D8EA12380EACFC6E00E63BC6 /* TLTrackingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTrackingManager.h; sourceTree = "<group>"; };
+		D8EA12390EACFC6E00E63BC6 /* TLTrackingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTrackingManager.m; sourceTree = "<group>"; };
+		D8EE57090D8F7345000ABA3F /* TLGPXFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXFile.h; sourceTree = "<group>"; };
+		D8EE570A0D8F7345000ABA3F /* TLGPXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXFile.m; sourceTree = "<group>"; };
+		D8EE571D0D8F762D000ABA3F /* TLGPXWaypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXWaypoint.h; sourceTree = "<group>"; };
+		D8EE571E0D8F762D000ABA3F /* TLGPXWaypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXWaypoint.m; sourceTree = "<group>"; };
+		D8EE57200D8F7648000ABA3F /* TLGPXTrackSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXTrackSegment.h; sourceTree = "<group>"; };
+		D8EE57210D8F7648000ABA3F /* TLGPXTrackSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXTrackSegment.m; sourceTree = "<group>"; };
+		D8EE57230D8F7662000ABA3F /* TLGPXTracklog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXTracklog.h; sourceTree = "<group>"; };
+		D8EE57240D8F7662000ABA3F /* TLGPXTracklog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXTracklog.m; sourceTree = "<group>"; };
+		D8EE57270D8F785C000ABA3F /* TLGPXNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXNode.h; sourceTree = "<group>"; };
+		D8EE57380D8F7920000ABA3F /* TLGPXNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXNode.m; sourceTree = "<group>"; };
+		D8F0AF890E255B05002F14FA /* TLAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAlias.h; sourceTree = "<group>"; };
+		D8F0AF8A0E255B05002F14FA /* TLAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAlias.m; sourceTree = "<group>"; };
+		D8F0AFC40E256FF5002F14FA /* TLProjectBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectBundle.h; sourceTree = "<group>"; };
+		D8F0AFC50E256FF5002F14FA /* TLProjectBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLProjectBundle.m; sourceTree = "<group>"; };
+		D8FB89EF0DA6E03D006E3F50 /* TLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhoto.h; sourceTree = "<group>"; };
+		D8FB89F00DA6E03D006E3F50 /* TLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhoto.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A0890B0D5A94DC00446533 /* liblibproj4.a in Frameworks */,
+				D86D87E90D641003000CCDA6 /* QuartzCore.framework in Frameworks */,
+				D881C6F60DB4122E006BB50C /* OpenGL.framework in Frameworks */,
+				D8F9DF0B0EE0896300219737 /* Cocoa.framework in Frameworks */,
+				D8B861B00F169C0C00CA89C0 /* Sparkle.framework in Frameworks */,
+				D8B863830F16C84C00CA89C0 /* TLCrashReporter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Mercatalog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* maptest */ = {
+			isa = PBXGroup;
+			children = (
+				D82771100DE1E6BF00CB3CB7 /* Basics */,
+				D87C8E080EA55E2B000D493B /* Cocoa Basics */,
+				D861A1AA0E42B0B4000AAE80 /* Projection */,
+				D887973D0E1AFC650019582B /* Geometry */,
+				D8EE571C0D8F7610000ABA3F /* GPX */,
+				D8DB84640D932FC400760486 /* Map */,
+				D87C8EAF0EA59677000D493B /* Timeline */,
+				D8B073640D94254000FD248B /* Mercatalog */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				D8CD898D0D57C9FB0039F3F8 /* Libraries */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = maptest;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* mercatalog_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D809AE2B0F1EB54700D7B5C3 /* Application.icns */,
+				D809AE2C0F1EB54700D7B5C3 /* Library.icns */,
+				D8B866490F17103000CA89C0 /* dsa_pub.pem */,
+				D8B862530F16B87500CA89C0 /* Acknowledgments.html */,
+				D8CC90F40EDD22FA0038C80A /* Tiles */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165DFE840E0CC02AAC07 /* InfoPlist.strings */,
+				D8D64B7D0E4D950A00202937 /* MainMenu.xib */,
+				D8D64B5B0E4D922500202937 /* ProjectWindow.xib */,
+				D8C259100EBA19D800EEA5CA /* ImportSheet.xib */,
+				D8ABE7BA0F2669F700D5EF6A /* Registration.xib */,
+				D8ABE7C80F2675B100D5EF6A /* ThankYou.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8B863820F16C84C00CA89C0 /* TLCrashReporter.framework */,
+				D8B861AF0F169C0C00CA89C0 /* Sparkle.framework */,
+				D881C6F50DB4122E006BB50C /* OpenGL.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				D86D87E80D641003000CCDA6 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D82771100DE1E6BF00CB3CB7 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				D827707D0DE1DC4C00CB3CB7 /* TLPrimitiveTypes.h */,
+				D82770400DE1A94000CB3CB7 /* TLArray.h */,
+				D82770410DE1A94000CB3CB7 /* TLArray.c */,
+				D884D2380E09D7F200C7F3F3 /* TLArrayTemplate.h */,
+				D8BE5CE70E647D0A00538F79 /* TLPointerArray.h */,
+				D8BE5CE80E647D0A00538F79 /* TLPointerArray.c */,
+				D8A3D01A0E0C51100036C32D /* TLToolbag.h */,
+				D8A3D01B0E0C51100036C32D /* TLToolbag.c */,
+				D8D5D9240E5231B2009CDA4E /* TLFloat.h */,
+				D8D5D9250E5231B2009CDA4E /* TLFloat.c */,
+				D8A4D5AC0EAEC30300C76EB5 /* TLRandom.h */,
+				D8A4D5AD0EAEC30300C76EB5 /* TLRandom.c */,
+				D809ADAC0F1E7EB600D7B5C3 /* TLMainThreadPerformer.h */,
+				D809ADAD0F1E7EB600D7B5C3 /* TLMainThreadPerformer.m */,
+			);
+			name = Basics;
+			sourceTree = "<group>";
+		};
+		D82771270DE1EA5700CB3CB7 /* Sphere Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D877A56B0E1AD26A00F8F01D /* TLCoordinate.h */,
+				D827712A0DE1EACA00CB3CB7 /* TLCoordPolygon.h */,
+				D827712B0DE1EACA00CB3CB7 /* TLCoordPolygon.c */,
+				D887969C0E1AEFFF0019582B /* TLMultiCoordPolygon.h */,
+				D887969D0E1AEFFF0019582B /* TLMultiCoordPolygon.c */,
+				D88D7AEF0DB8484800858121 /* TLCoordGeometry.h */,
+				D88D7AF00DB8484800858121 /* TLCoordGeometry.c */,
+			);
+			name = "Sphere Geometry";
+			sourceTree = "<group>";
+		};
+		D861A1AA0E42B0B4000AAE80 /* Projection */ = {
+			isa = PBXGroup;
+			children = (
+				D81CE11E0E4258C8009BDEB0 /* TLProjection.h */,
+				D81CE11F0E4258C8009BDEB0 /* TLProjection.c */,
+				D81CE1240E425C38009BDEB0 /* TLProjectionGeoid.h */,
+				D861A1990E42AF0E000AAE80 /* TLProjectionGeoidInternals.h */,
+				D81CE1250E425C38009BDEB0 /* TLProjectionGeoid.c */,
+				D81CE1290E425D9B009BDEB0 /* TLProjectionParameters.h */,
+				D861A15E0E429F77000AAE80 /* TLProjectionParametersInternal.h */,
+				D81CE12A0E425D9B009BDEB0 /* TLProjectionParameters.c */,
+				D8D0B03C0E440780008C1BFC /* TLProjectionDataRepresentation.h */,
+			);
+			name = Projection;
+			sourceTree = "<group>";
+		};
+		D87020D30EF32E0B008E7404 /* Value types */ = {
+			isa = PBXGroup;
+			children = (
+				D877A5640E1AD04600F8F01D /* TLLocation.h */,
+				D877A5650E1AD04600F8F01D /* TLLocation.m */,
+				D8DB88630EA3F759002F0D69 /* TLTimestamp.h */,
+				D8DB88640EA3F759002F0D69 /* TLTimestamp.m */,
+				D890FD6E0EE7313F0076166D /* TLOffsetTimestamp.h */,
+				D890FD6F0EE7313F0076166D /* TLOffsetTimestamp.m */,
+				D84A38E40ECA16BF003B70EA /* TLWaypoint.h */,
+				D84A38E50ECA16BF003B70EA /* TLWaypoint.m */,
+			);
+			name = "Value types";
+			sourceTree = "<group>";
+		};
+		D87021500EF37639008E7404 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				D82B380A0EEF4C64002C37C8 /* Mercatalog.xcdatamodel */,
+				D87021A00EF38432008E7404 /* TLModelTrack.h */,
+				D87021A10EF38432008E7404 /* TLModelTrack.m */,
+				D87022270EF39140008E7404 /* TLModelPhoto.h */,
+				D87022280EF39140008E7404 /* TLModelPhoto.m */,
+				D8CEC9860EF493D300130E05 /* TLModelHost.h */,
+				D8CEC9870EF493D300130E05 /* TLModelHost.m */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		D87C8E080EA55E2B000D493B /* Cocoa Basics */ = {
+			isa = PBXGroup;
+			children = (
+				D8F0AF890E255B05002F14FA /* TLAlias.h */,
+				D8F0AF8A0E255B05002F14FA /* TLAlias.m */,
+				D8F0AFC40E256FF5002F14FA /* TLProjectBundle.h */,
+				D8F0AFC50E256FF5002F14FA /* TLProjectBundle.m */,
+				D847C09A0E368D610074E51D /* TLCocoaToolbag.h */,
+				D847C09B0E368D610074E51D /* TLCocoaToolbag.m */,
+				D87C8E0A0EA55E5D000D493B /* TLSelectionManager.h */,
+				D87C8E0B0EA55E5D000D493B /* TLSelectionManager.m */,
+				D82526640E75CC7000B42730 /* TLTrackingZone.h */,
+				D82526650E75CC7000B42730 /* TLTrackingZone.m */,
+				D8EA12380EACFC6E00E63BC6 /* TLTrackingManager.h */,
+				D8EA12390EACFC6E00E63BC6 /* TLTrackingManager.m */,
+			);
+			name = "Cocoa Basics";
+			sourceTree = "<group>";
+		};
+		D87C8EAF0EA59677000D493B /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				D87C8EBC0EA597B5000D493B /* TLTime.h */,
+				D87C8EBD0EA597B5000D493B /* TLTime.m */,
+				D87C8EB70EA59702000D493B /* TLTimelineInfo.h */,
+				D840F2730E9EE9EF00E42614 /* TLTimelineView.h */,
+				D8C3CCF70EA64403005BFEBD /* TLTimelineView+HostInternals.h */,
+				D840F2740E9EE9EF00E42614 /* TLTimelineView.m */,
+				D87C8EB00EA596A9000D493B /* TLTimelineLayer.h */,
+				D87C8ED30EA59A98000D493B /* TLTimelineLayer+HostInternals.h */,
+				D87C8EB10EA596A9000D493B /* TLTimelineLayer.m */,
+				D87C8EB30EA596CD000D493B /* TLTimelineInteractiveLayer.h */,
+				D87C8EB40EA596CD000D493B /* TLTimelineInteractiveLayer.m */,
+				D890FD460EE71A2E0076166D /* TLCalendarTimelineLayer.h */,
+				D890FD470EE71A2E0076166D /* TLCalendarTimelineLayer.m */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
+		D8867C830E6DB151006CE570 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8955EC90EB0D85100F5EAD0 /* TLMercatalogStyler.h */,
+				D8955ECA0EB0D85100F5EAD0 /* TLMercatalogStyler.m */,
+				D89D762A0EDB3DF800260744 /* TLMercatalogViewShared.h */,
+				D8C7910A0EB683770003546F /* TLMapNavigationLayer.h */,
+				D8C7910B0EB683770003546F /* TLMapNavigationLayer.m */,
+				D890FE670EE7699F0076166D /* TLTimelineNavigationLayer.h */,
+				D890FE680EE7699F0076166D /* TLTimelineNavigationLayer.m */,
+				D884B04D0EE9EFAA00E00120 /* TLTimelineTimeZoneLayer.h */,
+				D884B04E0EE9EFAA00E00120 /* TLTimelineTimeZoneLayer.m */,
+				D8867C800E6DB071006CE570 /* TLPhotoLayer.h */,
+				D8867C810E6DB071006CE570 /* TLPhotoLayer.m */,
+				D87C8EC20EA5989E000D493B /* TLPhotoTimelineLayer.h */,
+				D87C8EC30EA5989E000D493B /* TLPhotoTimelineLayer.m */,
+				D8A6CF200E91661300BB9A65 /* TLTrackLayer.h */,
+				D8A6CF210E91661300BB9A65 /* TLTrackLayer.m */,
+				D87C8EE20EA59C6E000D493B /* TLTrackTimelineLayer.h */,
+				D87C8EE30EA59C6E000D493B /* TLTrackTimelineLayer.m */,
+				D823AE150ECC0D470050E92C /* TLMapLocationLayer.h */,
+				D823AE160ECC0D470050E92C /* TLMapLocationLayer.m */,
+				D88D63AF0ECCFD41007E2CD4 /* TLTimelineTrackerLayer.h */,
+				D88D63B00ECCFD41007E2CD4 /* TLTimelineTrackerLayer.m */,
+				D890FDF80EE7504C0076166D /* TLCameraTimelineLayer.h */,
+				D890FDF90EE7504C0076166D /* TLCameraTimelineLayer.m */,
+				D89A0FCD0F02E6F3000E48C9 /* TLPhotoLayout.h */,
+				D89A0FCE0F02E6F3000E48C9 /* TLPhotoLayout.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D8867C840E6DB166006CE570 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D87021500EF37639008E7404 /* Persistence */,
+				D87020D30EF32E0B008E7404 /* Value types */,
+				D8DB88E50EA43286002F0D69 /* TLMercatalogLibrary.h */,
+				D8DB88E60EA43286002F0D69 /* TLMercatalogLibrary.m */,
+				D8CEC98B0EF4940F00130E05 /* TLLibraryHost.h */,
+				D8CEC98C0EF4940F00130E05 /* TLLibraryHost.m */,
+				D8FB89EF0DA6E03D006E3F50 /* TLPhoto.h */,
+				D8FB89F00DA6E03D006E3F50 /* TLPhoto.m */,
+				D8375A350E119CBC00CF8A64 /* TLTrack.h */,
+				D8375A360E119CBC00CF8A64 /* TLTrack.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D8867C850E6DB191006CE570 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D840F2170E9EB89900E42614 /* TLLocator.h */,
+				D840F2180E9EB89900E42614 /* TLLocator.m */,
+				D840F1EB0E9E985400E42614 /* TLCameraTimeline.h */,
+				D840F1EC0E9E985400E42614 /* TLCameraTimeline.m */,
+				D8B394600EF87A2400096ABB /* TLImportController.h */,
+				D8B394610EF87A2400096ABB /* TLImportController.m */,
+				D8AEF8930EF9CA4500F7AD63 /* TLExportController.h */,
+				D8AEF8940EF9CA4500F7AD63 /* TLExportController.m */,
+				D8D64B560E4D8FE200202937 /* TLMercatalogAppDelegate.h */,
+				D8D64B570E4D8FE200202937 /* TLMercatalogAppDelegate.m */,
+				D82525610E759B7700B42730 /* TLMercatalogProjectController.h */,
+				D82525620E759B7700B42730 /* TLMercatalogProjectController.m */,
+				D8AEF8C10EF9D5DD00F7AD63 /* TLMapController.h */,
+				D8AEF8C20EF9D5DD00F7AD63 /* TLMapController.m */,
+				D8AEF8C40EF9D64400F7AD63 /* TLTimelineController.h */,
+				D8AEF8C50EF9D64400F7AD63 /* TLTimelineController.m */,
+				D8AEF9090EF9DFB400F7AD63 /* TLMercatalogControllerShared.h */,
+				D8AEF95A0EF9EDD200F7AD63 /* TLMercatalogControllerShared.m */,
+				D89FD7A40F267A3100D49A3C /* TLJimBos.h */,
+				D89FD7A50F267A3100D49A3C /* TLJimBos.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D88796D90E1AF68B0019582B /* Projecting Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D88796D40E1AF6390019582B /* TLBounds.h */,
+				D88796620E1ADE280019582B /* TLExtent.h */,
+				D88796630E1ADE280019582B /* TLExtent.c */,
+				D8A088DF0D5A927900446533 /* CTProjection.h */,
+				D8A088E00D5A927900446533 /* CTProjection.m */,
+				D8DFCB6A0E4785B40053FA6E /* TLProjectionInfo.h */,
+				D8DFCB6B0E4785B40053FA6E /* TLProjectionInfo.c */,
+				D88796F10E1AF8660019582B /* TLProjectionGeometry.h */,
+				D88796F20E1AF8660019582B /* TLProjectionGeometry.m */,
+				D8C7F05D0EDDE567009A487A /* TLProjectedDrawing.h */,
+				D8C7F05E0EDDE567009A487A /* TLProjectedDrawing.c */,
+			);
+			name = "Projecting Geometry";
+			sourceTree = "<group>";
+		};
+		D887973D0E1AFC650019582B /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D8FB36380D9D748F00953344 /* Plane Geometry */,
+				D82771270DE1EA5700CB3CB7 /* Sphere Geometry */,
+				D8A4D6A60EAEE5B200C76EB5 /* Geoid Geometry */,
+				D88796D90E1AF68B0019582B /* Projecting Geometry */,
+			);
+			name = Geometry;
+			sourceTree = "<group>";
+		};
+		D8A4D6A60EAEE5B200C76EB5 /* Geoid Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4D6900EAEE27900C76EB5 /* TLPlanetPoint.h */,
+				D8A4D6A80EAEE5E800C76EB5 /* TLGeoidGeometry.h */,
+				D8A4D6A90EAEE5E800C76EB5 /* TLGeoidGeometry.c */,
+			);
+			name = "Geoid Geometry";
+			sourceTree = "<group>";
+		};
+		D8B073640D94254000FD248B /* Mercatalog */ = {
+			isa = PBXGroup;
+			children = (
+				D8867C840E6DB166006CE570 /* Model */,
+				D8867C830E6DB151006CE570 /* View */,
+				D8867C850E6DB191006CE570 /* Controller */,
+			);
+			name = Mercatalog;
+			sourceTree = "<group>";
+		};
+		D8CD89760D57C9F40039F3F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8CD897E0D57C9F40039F3F8 /* liblibproj4.a */,
+				D8CD89800D57C9F40039F3F8 /* lproj */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8CD898D0D57C9FB0039F3F8 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D8CD89940D57CA340039F3F8 /* lib_proj.h */,
+				D8CD89750D57C9F40039F3F8 /* libproj4.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		D8DB84640D932FC400760486 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D8955F190EB0E90300F5EAD0 /* TLMapInfo.h */,
+				D8922A260D735DDD0014A325 /* TLMapLayer.h */,
+				D83A6E9F0E7348BB00141509 /* TLMapLayer+HostInternals.h */,
+				D8922A270D735DDD0014A325 /* TLMapLayer.m */,
+				D83A6E980E73413700141509 /* TLInteractiveMapLayer.h */,
+				D83A6E990E73413700141509 /* TLInteractiveMapLayer.m */,
+				D8922A1E0D735A200014A325 /* TLMapView.h */,
+				D83A6EF10E735E1D00141509 /* TLMapView+HostInternals.h */,
+				D8922A1F0D735A200014A325 /* TLMapView.m */,
+				D87CBCF60D73BD99000D3521 /* TLGraticuleMapLayer.h */,
+				D87CBCF70D73BD99000D3521 /* TLGraticuleMapLayer.m */,
+				D851A1870E495B2300F8A04B /* TLMapFrameLayer.h */,
+				D851A1880E495B2300F8A04B /* TLMapFrameLayer.m */,
+				255B28590ED90BBC0067A4A4 /* TLCache.h */,
+				255B285A0ED90BBC0067A4A4 /* TLCache.m */,
+				D8E237D00E9E80180065EEEE /* TLNaturalEarthLayer.h */,
+				2535A0220ED5DED400E677F4 /* TLNaturalEarthLayer.m */,
+				251005560ED4D00400C84ABF /* TLUnprojectionTable.h */,
+				251005570ED4D00400C84ABF /* TLUnprojectionTable.m */,
+				D870ACF00EDBA59A00691FB4 /* TLTileset.h */,
+				D870ACF10EDBA59A00691FB4 /* TLTileset.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		D8EE571C0D8F7610000ABA3F /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				D8EE57270D8F785C000ABA3F /* TLGPXNode.h */,
+				D8EE57380D8F7920000ABA3F /* TLGPXNode.m */,
+				D8EE57090D8F7345000ABA3F /* TLGPXFile.h */,
+				D8EE570A0D8F7345000ABA3F /* TLGPXFile.m */,
+				D8EE571D0D8F762D000ABA3F /* TLGPXWaypoint.h */,
+				D8EE571E0D8F762D000ABA3F /* TLGPXWaypoint.m */,
+				D8EE57200D8F7648000ABA3F /* TLGPXTrackSegment.h */,
+				D8EE57210D8F7648000ABA3F /* TLGPXTrackSegment.m */,
+				D8EE57230D8F7662000ABA3F /* TLGPXTracklog.h */,
+				D8EE57240D8F7662000ABA3F /* TLGPXTracklog.m */,
+			);
+			name = GPX;
+			sourceTree = "<group>";
+		};
+		D8FB36380D9D748F00953344 /* Plane Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D8A3CF860E0A01820036C32D /* TLSegment.h */,
+				D8A3CF870E0A01820036C32D /* TLSegment.c */,
+				D82770780DE1DBD700CB3CB7 /* TLPolygon.h */,
+				D82770790DE1DBD700CB3CB7 /* TLPolygon.c */,
+				D8A3CF840E0A01760036C32D /* TLMultiPolygon.h */,
+				D8A3CF830E0A01760036C32D /* TLMultiPolygon.c */,
+				D81D76870D78CADA0047B08F /* TLGeometry.h */,
+				D81D76880D78CADA0047B08F /* TLGeometry.c */,
+			);
+			name = "Plane Geometry";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Mercatalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Mercatalog" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				D8B861C90F169C3900CA89C0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8A089130D5A950200446533 /* PBXTargetDependency */,
+			);
+			name = Mercatalog;
+			productInstallPath = "$(HOME)/Applications";
+			productName = maptest;
+			productReference = 8D1107320486CEB800E47090 /* Mercatalog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Mercatalog" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* maptest */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D8CD89760D57C9F40039F3F8 /* Products */;
+					ProjectRef = D8CD89750D57C9F40039F3F8 /* libproj4.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Mercatalog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D8CD897E0D57C9F40039F3F8 /* liblibproj4.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibproj4.a;
+			remoteRef = D8CD897D0D57C9F40039F3F8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8CD89800D57C9F40039F3F8 /* lproj */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = lproj;
+			remoteRef = D8CD897F0D57C9F40039F3F8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D64B8E0E4D959900202937 /* InfoPlist.strings in Resources */,
+				D8D64B5C0E4D922500202937 /* ProjectWindow.xib in Resources */,
+				D8D64B7E0E4D950A00202937 /* MainMenu.xib in Resources */,
+				D8D366EB0EBB85660065D5E0 /* ImportSheet.xib in Resources */,
+				D8CC91530EDD22FA0038C80A /* Tiles in Resources */,
+				D8B862540F16B87500CA89C0 /* Acknowledgments.html in Resources */,
+				D8B8664A0F17103000CA89C0 /* dsa_pub.pem in Resources */,
+				D809AE2D0F1EB54700D7B5C3 /* Application.icns in Resources */,
+				D809AE2E0F1EB54700D7B5C3 /* Library.icns in Resources */,
+				D8ABE7BB0F2669F700D5EF6A /* Registration.xib in Resources */,
+				D8ABE7C90F2675B100D5EF6A /* ThankYou.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				D8A088E10D5A927900446533 /* CTProjection.m in Sources */,
+				D8922A200D735A200014A325 /* TLMapView.m in Sources */,
+				D8922A280D735DDD0014A325 /* TLMapLayer.m in Sources */,
+				D87CBCF80D73BD99000D3521 /* TLGraticuleMapLayer.m in Sources */,
+				D81D76890D78CADA0047B08F /* TLGeometry.c in Sources */,
+				D8EE570B0D8F7345000ABA3F /* TLGPXFile.m in Sources */,
+				D8EE571F0D8F762D000ABA3F /* TLGPXWaypoint.m in Sources */,
+				D8EE57220D8F7648000ABA3F /* TLGPXTrackSegment.m in Sources */,
+				D8EE57250D8F7662000ABA3F /* TLGPXTracklog.m in Sources */,
+				D8EE57390D8F7920000ABA3F /* TLGPXNode.m in Sources */,
+				D8FB89F10DA6E03D006E3F50 /* TLPhoto.m in Sources */,
+				D88D7AF10DB8484800858121 /* TLCoordGeometry.c in Sources */,
+				D82770420DE1A94000CB3CB7 /* TLArray.c in Sources */,
+				D827707A0DE1DBD700CB3CB7 /* TLPolygon.c in Sources */,
+				D827712C0DE1EACA00CB3CB7 /* TLCoordPolygon.c in Sources */,
+				D8A3CF850E0A01760036C32D /* TLMultiPolygon.c in Sources */,
+				D8A3CF880E0A01820036C32D /* TLSegment.c in Sources */,
+				D8A3D01C0E0C51100036C32D /* TLToolbag.c in Sources */,
+				D8375A370E119CBC00CF8A64 /* TLTrack.m in Sources */,
+				D88796640E1ADE280019582B /* TLExtent.c in Sources */,
+				D88796F30E1AF8660019582B /* TLProjectionGeometry.m in Sources */,
+				D88797D20E1B07250019582B /* TLLocation.m in Sources */,
+				D8F0AF8B0E255B05002F14FA /* TLAlias.m in Sources */,
+				D8F0AFC60E256FF5002F14FA /* TLProjectBundle.m in Sources */,
+				D8BFCC970E390E6D00192AA3 /* TLCocoaToolbag.m in Sources */,
+				D81CE1200E4258C8009BDEB0 /* TLProjection.c in Sources */,
+				D81CE1260E425C38009BDEB0 /* TLProjectionGeoid.c in Sources */,
+				D81CE12B0E425D9B009BDEB0 /* TLProjectionParameters.c in Sources */,
+				D8DFCB6C0E4785B40053FA6E /* TLProjectionInfo.c in Sources */,
+				D8F078220E49089C005AB83F /* TLMultiCoordPolygon.c in Sources */,
+				D851A1890E495B2300F8A04B /* TLMapFrameLayer.m in Sources */,
+				D8D64B580E4D8FE200202937 /* TLMercatalogAppDelegate.m in Sources */,
+				D8D5D9260E5231B2009CDA4E /* TLFloat.c in Sources */,
+				D8BE5CE90E647D0A00538F79 /* TLPointerArray.c in Sources */,
+				D8867C820E6DB071006CE570 /* TLPhotoLayer.m in Sources */,
+				D83A6ED00E7356E300141509 /* TLInteractiveMapLayer.m in Sources */,
+				D82525630E759B7700B42730 /* TLMercatalogProjectController.m in Sources */,
+				D82526660E75CC7000B42730 /* TLTrackingZone.m in Sources */,
+				D8A6CF220E91661300BB9A65 /* TLTrackLayer.m in Sources */,
+				D840F1ED0E9E985400E42614 /* TLCameraTimeline.m in Sources */,
+				D840F2190E9EB89900E42614 /* TLLocator.m in Sources */,
+				D840F2750E9EE9EF00E42614 /* TLTimelineView.m in Sources */,
+				D8DB88650EA3F759002F0D69 /* TLTimestamp.m in Sources */,
+				D8DB88E70EA43286002F0D69 /* TLMercatalogLibrary.m in Sources */,
+				D87C8E0C0EA55E5D000D493B /* TLSelectionManager.m in Sources */,
+				D87C8EB20EA596A9000D493B /* TLTimelineLayer.m in Sources */,
+				D87C8EB50EA596CD000D493B /* TLTimelineInteractiveLayer.m in Sources */,
+				D87C8EBE0EA597B5000D493B /* TLTime.m in Sources */,
+				D87C8EC40EA5989E000D493B /* TLPhotoTimelineLayer.m in Sources */,
+				D87C8EE40EA59C6E000D493B /* TLTrackTimelineLayer.m in Sources */,
+				D8EA123A0EACFC6E00E63BC6 /* TLTrackingManager.m in Sources */,
+				D8A4D5AE0EAEC30300C76EB5 /* TLRandom.c in Sources */,
+				D8A4D6AA0EAEE5E800C76EB5 /* TLGeoidGeometry.c in Sources */,
+				D8955F490EB0EC2700F5EAD0 /* TLMercatalogStyler.m in Sources */,
+				D8C7910C0EB683770003546F /* TLMapNavigationLayer.m in Sources */,
+				D84A38E60ECA16BF003B70EA /* TLWaypoint.m in Sources */,
+				D823AE170ECC0D470050E92C /* TLMapLocationLayer.m in Sources */,
+				D88D63B10ECCFD41007E2CD4 /* TLTimelineTrackerLayer.m in Sources */,
+				251005580ED4D00400C84ABF /* TLUnprojectionTable.m in Sources */,
+				2535A0230ED5DED400E677F4 /* TLNaturalEarthLayer.m in Sources */,
+				D870ACF20EDBA59A00691FB4 /* TLTileset.m in Sources */,
+				D8D9C35D0EDCB5120095FE87 /* TLCache.m in Sources */,
+				D8C7F05F0EDDE567009A487A /* TLProjectedDrawing.c in Sources */,
+				D890FD480EE71A2E0076166D /* TLCalendarTimelineLayer.m in Sources */,
+				D890FD7B0EE732470076166D /* TLOffsetTimestamp.m in Sources */,
+				D890FDFA0EE7504C0076166D /* TLCameraTimelineLayer.m in Sources */,
+				D890FE690EE7699F0076166D /* TLTimelineNavigationLayer.m in Sources */,
+				D884B04F0EE9EFAA00E00120 /* TLTimelineTimeZoneLayer.m in Sources */,
+				D82B380B0EEF4C64002C37C8 /* Mercatalog.xcdatamodel in Sources */,
+				D87021A20EF38432008E7404 /* TLModelTrack.m in Sources */,
+				D87022290EF39140008E7404 /* TLModelPhoto.m in Sources */,
+				D8CEC9880EF493D300130E05 /* TLModelHost.m in Sources */,
+				D8CEC98D0EF4940F00130E05 /* TLLibraryHost.m in Sources */,
+				D8B394620EF87A2400096ABB /* TLImportController.m in Sources */,
+				D8AEF8950EF9CA4500F7AD63 /* TLExportController.m in Sources */,
+				D8AEF8C30EF9D5DD00F7AD63 /* TLMapController.m in Sources */,
+				D8AEF8C60EF9D64400F7AD63 /* TLTimelineController.m in Sources */,
+				D8AEF95B0EF9EDD200F7AD63 /* TLMercatalogControllerShared.m in Sources */,
+				D89A0FCF0F02E6F3000E48C9 /* TLPhotoLayout.m in Sources */,
+				D809ADAE0F1E7EB600D7B5C3 /* TLMainThreadPerformer.m in Sources */,
+				D89FD7A60F267A3100D49A3C /* TLJimBos.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8A089130D5A950200446533 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libproj4;
+			targetProxy = D8A089120D5A950200446533 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Dependencies\"",
+				);
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_PREFIX_HEADER = mercatalog_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = Mercatalog;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Dependencies\"",
+				);
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_PREFIX_HEADER = mercatalog_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = Mercatalog;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wno-import",
+				);
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+					ppc,
+				);
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = 4.2;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_PROTOTYPE_CONVERSION = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SEPARATE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Mercatalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Mercatalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
